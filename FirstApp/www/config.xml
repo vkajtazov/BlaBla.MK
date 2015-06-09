@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
+	id="first.app" version="1.0.0">
+	<name>First App</name>
+
+	<description>
+		A sample Apache Cordova application that responds to the
+		deviceready
+		event.
+	</description>
+
+	<author href="http://www.eclipse.org/thym" email="thym-dev@eclipse.org">
+		Eclipse.org -
+		Thym
+	</author>
+
+	<content src="index.html" />
+
+	<access origin="*" />
+	<preference name="fullscreen" value="true" />
+	<preference name="webviewbounce" value="true" />
+
+	<feature name="App">
+		<param name="android-package" value="org.apache.cordova.App" />
+	</feature>
+	<feature name="Accelerometer">
+		<param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+		<param name="ios-package" value="CDVAccelerometer" />
+		<param name="wp-package" value="Accelerometer" />
+	</feature>
+	<feature name="Device Motion">
+		<param name="id" value="org.apache.cordova.device-motion" />
+	</feature>
+	<feature name="Device">
+		<param name="android-package" value="org.apache.cordova.device.Device" />
+		<param name="ios-package" value="CDVDevice" />
+		<param name="wp-package" value="Device" />
+		<param name="id" value="org.apache.cordova.device" />
+	</feature>
+
+</widget>

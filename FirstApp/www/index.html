@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="BlaBlaProject">
+    <head>
+        <link href="js/video-js/video-js.css" rel="stylesheet">
+        <script src="js/video-js/hdwplayer.js"></script>
+    <script src="js/video-js/video.js"></script>
+    <script>
+        videojs.options.flash.swf = "js/video-js/video-js.swf"
+    </script>
+    <style type="text/css">
+      .vjs-default-skin { color: #ffffff; }
+      .vjs-default-skin .vjs-control-bar { font-size: 103% }
+    </style>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+    </head>
+    <body ng-controller="mainController">
+<video id="example_video_1" class="video-js vjs-default-skin"
+  controls preload="auto" width="640" height="264"
+  poster="http://video-js.zencoder.com/oceans-clip.png"
+  data-setup='{"example_option":true}'>
+ <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+ <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+ <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+ <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
+        
+    </body>
+    
+            <!-- JavaScript Libs -->
+        <script type="text/javascript" src="js/components/jquery/dist/jquery.min.js" >  </script>
+		<script type="text/javascript" src="js/components/angular/angular.min.js" >  </script>
+		<script type="text/javascript" src="js/components/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/components/angular-bootstrap/ui-bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+		<script type="text/javascript" src="js/components/ui-router/release/angular-ui-router.js"></script>
+		<script type="text/javascript" src="js/components/angular/angular-cookies.min.js"></script>
+		<script type="text/javascript" src="js/components/angular/underscore.js"></script>
+		<script type="text/javascript" src="js/components/angular/angular-resource.js"></script>
+		<script type="text/javascript" src="js/components/angular/angularjs-dropdown-multiselect.js"></script>
+        
+        <!-- angular scripts -->
+		<script type="text/javascript" src="js/app.js" > </script>
+		
+		<script type="text/javascript" src="js/controllers/mainController.js" >  </script>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <!--<script type="text/javascript" src="js/index.js"></script>  -->
+</html>
